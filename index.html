@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio — Angga Nurdiansyah</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <a class="logo" href="#header">Angga</a>
+        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+        <ul class="nav-list">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- SECTION 1: Header -->
+      <section id="header" class="hero container">
+        <div class="hero-text">
+          <h1>Halo, saya <span class="name">Angga Nurdiansyah</span></h1>
+          <p class="lead">
+            Mahasiswa Informatika yang sedang mengembangkan website portofolio menggunakan HTML, CSS, dan JavaScript.
+          </p>
+          <p><a class="btn" href="#contact">Hubungi saya</a></p>
+        </div>
+        <div class="hero-image">
+          <img src="image/angga.jpeg" alt="Foto Angga" class="avatar">
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- SECTION 2: About Me -->
+      <section id="about" class="about container">
+        <h2>About Me</h2>
+        <p>
+          Saya <strong>Angga Nurdiansyah</strong>, mahasiswa Informatika yang
+          tertarik pada pengembangan web dan UI/UX. Saya senang membangun
+          tampilan yang rapi, responsif, dan mudah digunakan, serta terus
+          belajar teknologi web melalui tugas dan proyek kampus.
+        </p>
+      </section>
+
+      <!-- SECTION 3: Skills -->
+      <section id="skills" class="skills container">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <!-- SECTION 4: Projects -->
+      <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Kalkulus Ninja</h3>
+            <p>
+              Website pembelajaran interaktif yang membahas materi dasar
+              kalkulus seperti limit, turunan, dan integral. Dirancang untuk
+              membantu mahasiswa memahami konsep melalui penjelasan ringkas dan
+              tampilan yang responsif.
+            </p>
+            <p><a href="#" class="link">Lihat proyek</a></p>
+          </article>
+          <article class="card">
+            <h3>Jolaman</h3>
+            <p>
+              Website edukasi yang membahas tentang pinjaman online (pinjol),
+              termasuk cara mengenali pinjol legal dan ilegal, serta
+              langkah-langkah melaporkan pinjol bermasalah.
+            </p>
+            <p><a href="#" class="link">Lihat proyek</a></p>
+          </article>
+          <article class="card">
+            <h3>Alokasi Memori Kontigu</h3>
+            <p>
+              Web simulasi yang memvisualisasikan proses alokasi memori kontigu
+              pada RAM. Pengguna dapat melihat bagaimana proses pembagian dan
+              penggunaan memori dilakukan dalam sistem operasi.
+            </p>
+            <p><a href="#" class="link">Lihat proyek</a></p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 5: Contact -->
+      <section id="contact" class="contact container">
+        <h2>Contact</h2>
+        <p>
+          Ingin bekerja sama atau bertanya? Isi formulir di bawah atau kirim
+          email ke
+          <a href="mailto:nurdiansyahangga04@gmail.com"
+            >nurdiansyahangga04@gmail.com</a
+          >.
+        </p>
+        <form id="contactForm" class="contact-form">
+          <label>Nama<input type="text" name="name" required /></label>
+          <label>Email<input type="email" name="email" required /></label>
+          <label
+            >Pesan<textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        © 2026 Angga Nurdiansyah — All Right Reserved.
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
