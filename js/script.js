@@ -1,9 +1,17 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navList = document.querySelector('.nav-list');
-    if(navToggle){
-        navToggle.addEventListener('click', ()=>{
-            navList.style.display = navList.style.display === 'block' ? 'none' : 'block';
+
+    const closeNav = () => {
+        if (!navToggle || !navList) return;
+        navList.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    if (navToggle && navList) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navList.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
         });
     }
 
@@ -14,7 +22,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             if(target){
                 e.preventDefault();
                 target.scrollIntoView({behavior:'smooth',block:'start'});
-                if(window.innerWidth <= 800) navList.style.display = 'none';
+                if (window.innerWidth <= 800) closeNav();
             }
         });
     });
