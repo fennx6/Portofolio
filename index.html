@@ -9,37 +9,42 @@
   <body>
     <header class="site-header">
       <nav class="nav container">
-        <a class="logo" href="#header">Angga</a>
-        <button class="nav-toggle" aria-label="toggle navigation">☰</button>
-        <ul class="nav-list">
+        <a class="logo" href="#header">OGW4RD</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-list" id="primary-navigation">
           <li><a href="#about">About Me</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-
-      <!-- SECTION 1: Header -->  
-      <section id="header" class="hero container">
-        <div class="hero-text">
-          <h1>Halo, saya <span class="name">Angga Nurdiansyah</span></h1>
-          <p class="lead">
-            Informatics Student
-          </p>
-          <p><a class="btn" href="#contact">Hubungi saya</a></p>
-        </div>
-        <div class="hero-image">
-          <img src="image/angga.jpeg" alt="Foto Angga" class="avatar">
-        </div>
-      </section>
     </header>
 
     <main>
+      <section id="header" class="hero container">
+        <div class="hero-text">
+          <h1>Halo, saya <span class="name">Angga Nurdiansyah</span></h1>
+          <p class="lead">Informatics Student</p>
+          <p><a class="btn" href="#contact">Hubungi saya</a></p>
+        </div>
+        <div class="hero-image">
+          <img src="image/angga.jpeg" alt="Foto Angga" class="avatar" />
+        </div>
+      </section>
+
       <!-- SECTION 2: About Me -->
       <section id="about" class="about container">
         <h2>About Me</h2>
         <p>
-          Saya <strong>Angga Nurdiansyah</strong>, mahasiswa Informatika yang
+          Hai, kenalin saya <strong>Angga Nurdiansyah</strong>, mahasiswa Informatika yang
           tertarik pada pengembangan web dan UI/UX. Saya senang membangun
           tampilan yang rapi, responsif, dan mudah digunakan, serta terus
           belajar teknologi web melalui tugas dan proyek kampus.
@@ -61,32 +66,72 @@
         <h2>Projects</h2>
         <div class="grid">
           <article class="card">
-            <h3>Kalkulus Ninja</h3>
-            <p>
-              Website pembelajaran interaktif yang membahas materi dasar
-              kalkulus seperti limit, turunan, dan integral. Dirancang untuk
-              membantu mahasiswa memahami konsep melalui penjelasan ringkas dan
-              tampilan yang responsif.
-            </p>
-            <p><a href="#" class="link">Lihat proyek</a></p>
+            <div class="project-image">
+              <img src="image/kalkulus-ui.jpg" alt="UI Kalkulus Ninja" />
+            </div>
+            <div class="card-content">
+              <h3>Kalkulus Ninja</h3>
+              <p>
+                Kalkulus Ninja adalah website pembelajaran interaktif yang
+                dirancang untuk membantu mahasiswa memahami konsep dasar
+                kalkulus seperti limit, turunan, dan integral secara lebih
+                sederhana dan terstruktur. Website ini menampilkan materi
+                ringkas, contoh soal, kalkulator, serta tampilan UI yang
+                responsif agar mudah diakses di berbagai perangkat.
+              </p>
+              <p><a href="#" target="_blank" class="link">Lihat proyek</a></p>
+            </div>
           </article>
           <article class="card">
-            <h3>Jolaman</h3>
-            <p>
-              Website edukasi yang membahas tentang pinjaman online (pinjol),
-              termasuk cara mengenali pinjol legal dan ilegal, serta
-              langkah-langkah melaporkan pinjol bermasalah.
-            </p>
-            <p><a href="#" class="link">Lihat proyek</a></p>
+            <div class="project-image">
+              <img src="image/jolaman-ui.jpg" alt="UI Jolaman" />
+            </div>
+            <div class="card-content">
+              <h3>Jolaman</h3>
+              <p>
+                Jolaman merupakan website edukasi yang membahas informasi
+                seputar pinjol, termasuk perbedaan pinjol legal dan ilegal,
+                risiko yang mungkin terjadi, serta langkah-langkah pelaporan
+                jika terjadi penyalahgunaan. Website ini dibuat dengan tujuan
+                meningkatkan literasi digital dan membantu masyarakat lebih
+                bijak dalam menggunakan layanan keuangan online.
+              </p>
+              <p>
+                <a
+                  href="https://jolaman.vercel.app"
+                  target="_blank"
+                  class="link"
+                  >Lihat proyek</a
+                >
+              </p>
+            </div>
           </article>
           <article class="card">
-            <h3>Alokasi Memori Kontigu</h3>
-            <p>
-              Web simulasi yang memvisualisasikan proses alokasi memori kontigu
-              pada RAM. Pengguna dapat melihat bagaimana proses pembagian dan
-              penggunaan memori dilakukan dalam sistem operasi.
-            </p>
-            <p><a href="#" class="link">Lihat proyek</a></p>
+            <div class="project-image">
+              <img
+                src="image/mem-allocation-ui.jpg"
+                alt="UI Alokasi Memori Kontigu"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Alokasi Memori Kontigu</h3>
+              <p>
+                Simulator Alokasi Memori Kontigu adalah web simulasi yang
+                memvisualisasikan cara kerja manajemen memori pada sistem
+                operasi, khususnya metode alokasi kontigu. Pengguna dapat
+                melihat bagaimana proses pembagian, penggunaan, dan fragmentasi
+                memori terjadi secara visual, sehingga mempermudah pemahaman
+                konsep yang biasanya bersifat teoritis.
+              </p>
+              <p>
+                <a
+                  href="https://mem-allocation.vercel.app"
+                  target="_blank"
+                  class="link"
+                  >Lihat proyek</a
+                >
+              </p>
+            </div>
           </article>
         </div>
       </section>
